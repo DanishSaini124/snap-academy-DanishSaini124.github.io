@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snapchat Filters Catalog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/snapchat-logo.webp" alt="Snapchat Logo" class="logo-img">
+            <h1>Snapchat Filters Catalog</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for filters...">
+            <button id="search-button"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <div class="controls">
+            <div class="view-toggle">
+                <button id="grid-view" class="active"><i class="fas fa-th"></i> Grid</button>
+                <button id="list-view"><i class="fas fa-list"></i> List</button>
+            </div>
+            <div class="filter-options">
+                <select id="category-filter">
+                    <option value="all">All Categories</option>
+                    <option value="Face">Face Filters</option>
+                    <option value="World">World Lenses</option>
+                    <option value="Interactive">Interactive</option>
+                    <option value="Trending">Trending</option>
+                    <option value="Special">Special Events</option>
+                </select>
+                <select id="sort-options">
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                    <option value="popularity">Most Popular</option>
+                    <option value="name">Name (A-Z)</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="filters-container" class="grid-view">
+            <!-- Filters will be dynamically added here -->
+        </div>
+    </main>
+
+    <div id="filter-details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="modal-content-container">
+                <!-- Filter details will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Created for Snap Engineering Academy Project Assessment | 2025</p>
+        <p>Note: This is an educational project and is not affiliated with Snap Inc.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
